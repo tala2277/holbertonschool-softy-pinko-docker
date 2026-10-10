@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  back-end-1:
+    build: ./back-end
+
+  back-end-2:
+    build: ./back-end
+
+  front-end:
+    build: ./front-end
+
+  proxy-server:
+    build: ./proxy-server
+    ports:
+      - "80:80"
